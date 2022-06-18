@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Todo } from '@nx-demo/api-interfaces';
+import { Todo } from '@nx-demo/data';
 
 @Injectable()
 export class AppService {

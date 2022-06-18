@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-demo/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@nx-demo/data": ["libs/data/src/index.ts"],
+      "@nx-demo/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

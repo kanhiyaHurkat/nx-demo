@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
-import { Todo } from '@nx-demo/api-interfaces';
+import { Todo } from '@nx-demo/data';
 import { AppService } from './app.service';
 
 @Controller()

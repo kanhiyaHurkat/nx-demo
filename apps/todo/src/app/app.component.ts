@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoViewModel } from '@nx-demo/data';
 import { take } from 'rxjs';
-import { TodoViewModel } from './model/view.model';
 import { TodoHttpService } from './services/todo-http.service';
 
 @Component({

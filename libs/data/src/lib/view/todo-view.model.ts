@@ -1,4 +1,5 @@
-import { Todo } from '@nx-demo/api-interfaces';
+import { Todo } from "../api/todo-api.model";
+
 
 export class TodoViewModel {
   todoId: string;

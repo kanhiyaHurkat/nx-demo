@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Todo } from '@nx-demo/api-interfaces';
+import { Todo, TodoViewModel } from '@nx-demo/data';
 import { map, Observable } from 'rxjs';
-import { TodoViewModel } from '../model/view.model';
 
 @Injectable({
   providedIn: 'root'
