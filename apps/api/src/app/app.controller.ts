@@ -1,15 +1,23 @@
-import { Controller, Get } from '@nestjs/common';
-
-import { Message } from '@nx-demo/api-interfaces';
-
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Todo } from '@nx-demo/api-interfaces';
 import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('hello')
-  getData(): Message {
-    return this.appService.getData();
+  @Get('todos')
+  getTodos(): Todo[] {
+    return this.appService.getTodos();
+  }
+
+  @Get('todo/:id')
+  getTodo(@Param('id') id: string): Todo {
+    return this.appService.getTodoById(id);
+  }
+
+  @Post('todo')
+  addTodo(@Body() todoData: Todo): Todo {
+    return this.appService.addTodo(todoData);
   }
 }
